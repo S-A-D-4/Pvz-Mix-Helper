@@ -1,0 +1,20 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C1_002E3_005CBepInEx_005Ccore_005C0Harmony20_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C1_002E3_005CBepInEx_005Ccore_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C_7248_672C_005CPlantsVsZombiesRH_005FData_005CManaged_005CAssembly_002DCSharp_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C_7248_672C_005CPlantsVsZombiesRH_005FData_005CManaged_005CUnityEngine_002ECoreModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C_7248_672C_005CPlantsVsZombiesRH_005FData_005CManaged_005CUnityEngine_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C_7248_672C_005CPlantsVsZombiesRH_005FData_005CManaged_005CUnityEngine_002EIMGUIModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C_7248_672C_005CBepInEx_005Ccore_005C0Harmony20_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CQuark_0020Download_005C_690D_7269_5927_6218_50F5_5C38_878D_5408_FF1A_9ED1_591C_7248_672C_005CBepInEx_005Ccore_005CBepInEx_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="D:\Quark Download\植物大战僵尸融合：黑夜版本\PlantsVsZombiesRH_Data\Managed\Assembly-CSharp.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Quark Download\植物大战僵尸融合：黑夜版本\BepInEx\core\BepInEx.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.1\System.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.1\System.Core.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.1\System.Xml.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Unity\Editer\2022.2.7f1c1\Editor\Data\Managed\UnityEngine.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Quark Download\植物大战僵尸融合：黑夜版本\PlantsVsZombiesRH_Data\Managed\UnityEngine.IMGUIModule.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Quark Download\植物大战僵尸融合：黑夜版本\PlantsVsZombiesRH_Data\Managed\UnityEngine.CoreModule.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Code\Rider\Plugin\packages\Lib.Harmony.2.3.3\lib\net452\0Harmony.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
