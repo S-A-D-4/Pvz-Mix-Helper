@@ -48,8 +48,16 @@
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Xml"/>
+        <Reference Include="Unity.TextMeshPro">
+            <HintPath>..\..\..\..\Quark Download\植物大战僵尸融合：黑夜1.3\PlantsVsZombiesRH_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
         <Reference Include="UnityEngine">
             <HintPath>..\..\..\..\Quark Download\植物大战僵尸融合：黑夜版本\PlantsVsZombiesRH_Data\Managed\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule">
+            <HintPath>..\..\..\..\Quark Download\植物大战僵尸融合：黑夜1.3\PlantsVsZombiesRH_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
@@ -60,16 +68,30 @@
             <HintPath>..\..\..\..\Quark Download\植物大战僵尸融合：黑夜版本\PlantsVsZombiesRH_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+            <HintPath>..\..\..\..\Quark Download\植物大战僵尸融合：黑夜1.3\PlantsVsZombiesRH_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+            <HintPath>..\..\..\..\Quark Download\植物大战僵尸融合：黑夜1.3\PlantsVsZombiesRH_Data\Managed\UnityEngine.UI.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+            <HintPath>..\..\..\..\Quark Download\植物大战僵尸融合：黑夜1.3\PlantsVsZombiesRH_Data\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="HelperMain.cs"/>
         <Compile Include="LifeCycle\Config.cs"/>
+        <Compile Include="LifeCycle\DrawHealthPlants.cs"/>
+        <Compile Include="LifeCycle\DrawHealthZombies.cs"/>
         <Compile Include="LifeCycle\HaveLifeCycle.cs"/>
-        <Compile Include="LifeCycle\HelperWindow.cs"/>
-        <Compile Include="Patch\InitZombieList_InitZombiePatch.cs"/>
+        <Compile Include="LifeCycle\ZombieGeneratorWindows.cs"/>
+        <Compile Include="Patch\InitZombieList_Patch.cs"/>
         <Compile Include="Patch\Plant_Patch.cs"/>
-        <Compile Include="Patch\ZombiePatch.cs"/>
-        <Compile Include="Patch\Board_ZombieUpdatePatch.cs"/>
+        <Compile Include="Patch\UIMgr_Patch.cs"/>
+        <Compile Include="Patch\Zombie_Patch.cs"/>
+        <Compile Include="Patch\Board_Patch.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>

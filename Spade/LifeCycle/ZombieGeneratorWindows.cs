@@ -3,32 +3,27 @@ using UnityEngine;
 
 namespace Spade.LifeCycle
 {
-	public class HelperWindows : HaveLifeCycle
+	public class ZombieGeneratorWindows : HaveLifeCycle
 	{
-		public static HelperWindows Instance;
-		public        Rect          beginScrollRect = new Rect(10, 160, 180, 360); // 滚动视图开始
+		public Rect   beginScrollRect;
+		public Rect   bigRect = new Rect(10, 10, 200, 540); // 显示Popup时窗口的大小
+		public Rect   generateRect;
+		public string num = "1";
 
-		public Rect   bigRect            = new Rect(10, 10, 200, 540); // 显示Popup时窗口的大小
-		public Rect   generateZombieRect = new Rect(10, 90, 180, 30);  // 生成僵尸按钮
-		public string num                = "1";
-
-		public  Rect    numLabelRect   = new Rect(10, 20, 70, 30);
-		public  Rect    numRect        = new Rect(95, 20, 100, 30);
-		public  Rect    popupRect      = new Rect(10, 160, 180, 360); // Popup框
-		public  string  road           = "-1";
-		public  Rect    roadLabelRect  = new Rect(10, 55, 70, 30);
-		public  Rect    roadRect       = new Rect(95, 55, 100, 30);
+		public  Rect    numLabelRect;
+		public  Rect    numRect;
+		public  Rect    popupRect;
+		public  string  road = "-1";
+		public  Rect    roadLabelRect;
+		public  Rect    roadRect;
 		private Vector2 scrollPosition = Vector2.zero;
+		private int     selectedIndex;
+		private bool    showPopup;
+		public  Rect    showPopupRect;
+		public  Rect    smallRect = new Rect(10, 10, 200, 180); // 不显示Popup时窗口的大小
+		public  Rect    viewRect;
 
-		private int selectedIndex;
-
-		private bool showPopup;
-		public  Rect showPopupRect = new Rect(10, 125, 180, 30); // 显示Popup按钮
-		public  Rect smallRect     = new Rect(10, 10, 200, 180); // 不显示Popup时窗口的大小
-		private Rect tooltipRect   = new Rect(100, 100, 150, 200);
-		public  Rect viewRect;
-
-		public Rect windowRect = new Rect(10, 10, 200, 150); // 初始窗口的位置和大小
+		public Rect windowRect;
 
 		// 窗口标题
 		private string windowTitle = "僵尸生成器";
@@ -64,8 +59,23 @@ namespace Spade.LifeCycle
 
 		public override void Awake()
 		{
-			Instance = this;
-			viewRect = new Rect(0, 0, 160, zombieNames.Length * 30);
+			viewRect   = new Rect(0, 0, 160, zombieNames.Length * 30);
+			windowRect = smallRect;
+
+
+			float yOffset = 20f;
+			numLabelRect    =  new Rect(10, yOffset, 70, 30);
+			numRect         =  new Rect(85, yOffset, 100, 30);
+			yOffset         += 35;
+			roadLabelRect   =  new Rect(10, yOffset, 70, 30);
+			roadRect        =  new Rect(85, yOffset, 100, 30);
+			yOffset         += 35;
+			generateRect    =  new Rect(10, yOffset, 180, 30);
+			yOffset         += 35;
+			showPopupRect   =  new Rect(10, yOffset, 180, 30);
+			yOffset         += 35;
+			beginScrollRect =  new Rect(10, yOffset, 180, 360);
+			popupRect       =  new Rect(10, yOffset, 180, 360);
 		}
 
 		public override void OnGUI()
@@ -83,7 +93,7 @@ namespace Spade.LifeCycle
 			GUI.Label(roadLabelRect, "生成路线");
 			road = GUI.TextField(roadRect, road);
 
-			if (GUI.Button(generateZombieRect, "生成"))
+			if (GUI.Button(generateRect, "生成"))
 			{
 				if (!int.TryParse(num, out int intNum))
 					return;

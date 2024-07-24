@@ -26,10 +26,11 @@ namespace Spade
 			new Harmony("spade.pvzMix.Helper").PatchAll();
 			instance = this;
 
-
 			haveLifeCycles = new List<HaveLifeCycle>
 			{ new Config(),
-			  new HelperWindows() };
+			  new ZombieGeneratorWindows(),
+			  new DrawHealthPlants(),
+			  new DrawHealthZombies() };
 
 			foreach (HaveLifeCycle haveLifeCycle in haveLifeCycles) haveLifeCycle.Awake();
 		}

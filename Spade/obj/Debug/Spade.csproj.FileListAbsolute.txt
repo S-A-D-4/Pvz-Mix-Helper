@@ -42,3 +42,4 @@ D:\Code\Rider\Pvz-Mix-Helper\Spade\obj\Debug\Spade.csproj.CoreCompileInputs.cach
 D:\Code\Rider\Pvz-Mix-Helper\Spade\obj\Debug\Spade.csproj.CopyComplete
 D:\Code\Rider\Pvz-Mix-Helper\Spade\obj\Debug\Spade.dll
 D:\Code\Rider\Pvz-Mix-Helper\Spade\obj\Debug\Spade.pdb
+D:\Code\Rider\Pvz-Mix-Helper\Spade\bin\Debug\UnityEngine.UI.dll

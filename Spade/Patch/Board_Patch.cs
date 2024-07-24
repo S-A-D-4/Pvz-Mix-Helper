@@ -3,10 +3,11 @@ using Spade.LifeCycle;
 
 namespace Spade.Patch
 {
-	[HarmonyPatch(typeof(Board), "NewZombieUpdate")]
-	public class Board_ZombieUpdatePatch
+	[HarmonyPatch(typeof(Board))]
+	public class Board_Patch
 	{
 		[HarmonyPrefix]
+		[HarmonyPatch("NewZombieUpdate")]
 		public static bool Stop()
 		{
 			return Config.newZombieUpdateOn.Value;

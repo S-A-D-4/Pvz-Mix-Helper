@@ -3,10 +3,11 @@ using Spade.LifeCycle;
 
 namespace Spade.Patch
 {
-	[HarmonyPatch(typeof(InitZombieList), "InitZombie")]
-	public class InitZombieList_InitZombiePatch
+	[HarmonyPatch(typeof(InitZombieList))]
+	public class InitZombieList_Patch
 	{
 		[HarmonyPrefix]
+		[HarmonyPatch("InitZombie")]
 		public static bool Overwrite(int theLevelType, int theLevelNumber)
 		{
 			Traverse traverse = Traverse.Create(typeof(InitZombieList));
@@ -32,7 +33,7 @@ namespace Spade.Patch
 			traverse.Method("InitAdvWave", theLevelNumber).GetValue(theLevelNumber);
 			for (int i = 1; i <= InitZombieList.theMaxWave; i++)
 			{
-				int zombiePoint = i * multiplier * Config.zombieMultiplier.Value;
+				int zombiePoint = (int)(i * multiplier * Config.zombieNumMultiplier.Value);
 				while (zombiePoint > 0)
 				{
 					bool flag = false;
